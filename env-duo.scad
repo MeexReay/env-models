@@ -30,6 +30,20 @@ difference(){
     [0.6, 0.25, 0.4],
     [-0.6, 0.25, 0.4],
   ],10));
+  
+  // right speakers
+  for (i = [0:4]) { 
+    translate([i*0.35 + 1.8, -9.8, 0.5])
+    rotate([90, 0, 0])
+    cylinder(0.4, d=0.3);
+  }
+
+  // left speakers
+  for (i = [0:4]) { 
+    translate([i*-0.35 - 1.8, -9.8, 0.5])
+    rotate([90, 0, 0])
+    cylinder(0.4, d=0.3);
+  }
 };
 
 $fn=20;
