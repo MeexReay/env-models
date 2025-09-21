@@ -73,31 +73,31 @@ difference(){
 translate([5, 1, 0.3])
 rotate([0, 90, 0])
 linear_extrude(height=0.1)
-polygon([
-  [0, 1.8],
-  [-0.4, 1.8],
-  [-0.4, 0],
-  [0, 0],
-]);
+polygon(polyRound([
+  [0, 1.8, 1],
+  [-0.4, 1.8, 1],
+  [-0.4, 0, 1],
+  [0, 0, 1],
+],10));
 
 // vol down button
 translate([-5, 1, 0.3])
 rotate([0, -90, 0])
 linear_extrude(height=0.1)
-polygon([
-  [0, 1.2],
-  [0.4, 1.2],
-  [0.4, 0],
-  [0, 0],
-]);
+polygon(polyRound([
+  [0, 1.2, 1],
+  [0.4, 1.2, 1],
+  [0.4, 0, 1],
+  [0, 0, 1],
+],10));
 
 // vol up button
-translate([-5, 2.4, 0.3])
+translate([-5, 2.3, 0.3])
 rotate([0, -90, 0])
 linear_extrude(height=0.1)
-polygon([
-  [0, 1.2],
-  [0.4, 1.2],
-  [0.4, 0],
-  [0, 0],
-]);
+polygon(polyRound([
+  [0, 1.2, 1],
+  [0.4, 1.2, 1],
+  [0.4, 0, 1],
+  [0, 0, 1],
+],10));
