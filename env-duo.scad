@@ -1,6 +1,7 @@
 include <Round-Anything/polyround.scad>
 
 // case
+translate([0, 0, 0.2])
 color([0.65, 0.65, 0.65, 1])
 difference(){
   union(){
@@ -132,8 +133,8 @@ $fn=20;
 
 // pwr button
 color([0.7, 0.7, 0.7, 1])
-translate([6, 0, 0.9])
-linear_extrude(height=0.1)
+translate([6, 0, 0])
+linear_extrude(height=0.3)
 polygon(polyRound([
   [0, 1.8, 1],
   [-0.4, 1.8, 1],
@@ -143,8 +144,8 @@ polygon(polyRound([
 
 // vol down button
 color([0.7, 0.7, 0.7, 1])
-translate([6.5, 0, 0.9])
-linear_extrude(height=0.1)
+translate([6.5, 0, 0])
+linear_extrude(height=0.3)
 polygon(polyRound([
   [0, 1.2, 1],
   [0.4, 1.2, 1],
@@ -154,8 +155,8 @@ polygon(polyRound([
 
 // vol up button
 color([0.7, 0.7, 0.7, 1])
-translate([7, 0, 0.9])
-linear_extrude(height=0.1)
+translate([7, 0, 0])
+linear_extrude(height=0.3)
 polygon(polyRound([
   [0, 1.2, 1],
   [0.4, 1.2, 1],
